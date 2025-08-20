@@ -1,0 +1,23 @@
+import turtle
+
+def draw_circle():
+  
+    screen = turtle.Screen()
+    screen.title("Shapes Drawing")
+    screen.bgcolor("white")
+    
+    
+    pen = turtle.Turtle()
+    pen.color("blue")
+    pen.pensize(3)
+    pen.speed(2)
+    
+    
+    radius = 150
+    pen.circle(radius)
+    
+    
+    turtle.done()
+
+if _name_ == "_main_":
+    draw_circle()
