@@ -1,0 +1,5 @@
+import numpy as np
+n = int(input("Enter a number: "))
+table = np.arange(1, 11) * n
+for i, val in enumerate(table, start=1):
+    print(f"{n} x {i} = {val}")
