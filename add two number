@@ -1,0 +1,3 @@
+import operator
+a, b = 5, 7
+print("Sum:", operator.add(a, b))
