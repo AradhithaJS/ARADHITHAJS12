@@ -1,0 +1,24 @@
+import pandas as pd
+
+# Ask how many students
+n = int(input("Enter number of students: "))
+
+data = {"USN": [], "Subject 1": [], "Subject 2": [], "Subject 3": []}
+
+for i in range(n):
+    print(f"\n--- Enter details for Student {i+1} ---")
+    usn = input("Enter USN: ")
+    s1 = int(input("Enter marks in Subject 1: "))
+    s2 = int(input("Enter marks in Subject 2: "))
+    s3 = int(input("Enter marks in Subject 3: "))
+
+    data["USN"].append(usn)
+    data["Subject 1"].append(s1)
+    data["Subject 2"].append(s2)
+    data["Subject 3"].append(s3)
+
+# Create DataFrame (table)
+df = pd.DataFrame(data)
+
+print("\n📊 Last Semester Marks Table:")
+print(df)
