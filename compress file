@@ -1,0 +1,9 @@
+import zlib
+
+def compress_text():
+    text = b"Python is fun! " * 10
+    compressed = zlib.compress(text)
+    print("Original size:", len(text))
+    print("Compressed size:", len(compressed))
+
+compress_text()
