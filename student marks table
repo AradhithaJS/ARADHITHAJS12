@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Ask how many students
+
 n = int(input("Enter number of students: "))
 
 data = {"USN": [], "Subject 1": [], "Subject 2": [], "Subject 3": []}
@@ -17,8 +17,7 @@ for i in range(n):
     data["Subject 2"].append(s2)
     data["Subject 3"].append(s3)
 
-# Create DataFrame (table)
 df = pd.DataFrame(data)
 
-print("\n📊 Last Semester Marks Table:")
+print("\n Last Semester Marks Table:")
 print(df)
