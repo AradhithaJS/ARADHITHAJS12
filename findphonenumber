@@ -1,0 +1,9 @@
+import re
+
+def regex_demo():
+    text = "My phone number is 9876543210"
+    match = re.search(r"\d{10}", text)
+    if match:
+        print("Found phone number:", match.group())
+
+regex_demo()
